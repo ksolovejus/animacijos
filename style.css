@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: fixed;
+    background: grey;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+.container{
+    margin: 40px;
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+}
+
+/* Circle */
+.circle-1{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: white -4px -5px 3px -3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotate 2s infinite linear;
+}
+
+.circle-2{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 8px solid white;
+    background: royalblue;
+    box-shadow: white -4px -4px 3px -3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-3{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 5px solid crimson;
+    background: orange;
+}
+
+@keyframes rotate{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+/* Background */
+.block{
+    width: 44px;
+    height: 42px;
+    border: 2px solid black;
+    display: inline-block;
+    background: grey;
+    transition: width 0.1s;
+    margin: -2px;
+}
+
+.block:hover{
+    width: 84px;
+    height: 43px;
+    background: crimson;
+    transform: translate(0px, 0px);
+}
